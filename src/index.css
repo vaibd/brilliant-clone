@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@font-face {
+  font-family: 'CoFoRobertRegular';
+  font-style: normal;
+  font-weight: normal;
+  src: local('CoFoRobertRegular'), url('./assets/fonts/CoFo_Robert/CoFo_Robert-Regular.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'CoFoSansRegular';
+  font-style: normal;
+  font-weight: normal;
+  src: local('CoFoSansRegular'), url('./assets/fonts/CoFo_Sans/CoFoSans-Regular.woff') format('woff');
+}
+
+@layer base {
+  h1 {
+    @apply heading-xl;
+  }
+
+  h3, p {
+    @apply text-base;
+  }
+}
+
+@layer utilities {
+  .heading-xl {
+    @apply text-7xl font-[CoFoRobertRegular] font-bold;
+  }
+
+  .text-base {
+    @apply text-xl font-[CoFoSansRegular];
+  }
+
+  .width-lg {
+    @apply max-w-[90dvw] mx-auto mobile:max-w-[85dvw] tablet:max-w-[80dvw] laptop:max-w-[70dvw] desktop:max-w-[48dvw];
+  }
+
+
+}
