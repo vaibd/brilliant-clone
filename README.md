@@ -50,3 +50,6 @@ VITE_FIREBASE_APP_ID=
 ## Limitation
 1. Reducer is returning static data; could have been improved by using extra reducer
 2. Featuers filter could be improved by dispatching actions instead of directly manipulating data
+
+## Time taken
+~8hrs, took some time in UI and animations.
