@@ -4,16 +4,21 @@ import Button3D from "../Shared/Buttons/Button3D";
 import { useNavigate } from "react-router-dom";
 import Error from "./Error";
 import { useState } from "react";
+import { useDispatch } from "react-redux";
+import { setLoading } from "../../redux/loadingSlice";
 
 const SocialLogins = () => {
   const navigate = useNavigate();
   const [error, setError] = useState("");
-
+  const dispatch = useDispatch();
   const googleLogin = async () => {
     try {
+      dispatch(setLoading(true));
       await signInWithPopup(auth, googleProvider);
+      dispatch(setLoading(false));
       navigate("/home");
     } catch (error) {
+      dispatch(setLoading(false));
       setError((error as Error).message);
     }
   };

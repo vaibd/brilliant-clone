@@ -9,10 +9,13 @@ import { useState } from "react";
 import Error from "./Error";
 import { emailValidate, emptyFieldValidate } from "../../lib/auth";
 import AuthBtn from "./AuthBtn";
+import { useDispatch } from "react-redux";
+import { setLoading } from "../../redux/loadingSlice";
 
 const LoginForm = () => {
   const navigate = useNavigate();
   const [error, setError] = useState("");
+  const dispatch = useDispatch();
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -30,14 +33,17 @@ const LoginForm = () => {
     }
 
     try {
+      dispatch(setLoading(true));
       await signInWithEmailAndPassword(
         auth,
         loginData.email,
         loginData.password
       );
+      dispatch(setLoading(false));
 
       navigate("/home");
     } catch (error) {
+      dispatch(setLoading(false));
       setError((error as Error).message);
     }
   };

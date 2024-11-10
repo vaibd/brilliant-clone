@@ -25,7 +25,7 @@ const NavBar = ({ children }: { children: React.ReactNode }) => {
     <>
       <NavigationContainer
         className="shadow-lg smLaptop:py-3 py-2"
-        logoClassName="smLaptop:block md:w-[5.9rem] hidden">
+        logoClassName="smLaptop:block md:w-[5.8rem] hidden">
         <Paths />
         <div className="flex items-center gap-4">
           <Search className="smLaptop:block hidden bg-dim/50 !py-1" />

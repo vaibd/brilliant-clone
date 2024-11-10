@@ -14,11 +14,13 @@ import {
   passwordValidate,
 } from "../../lib/auth";
 import Error from "./Error";
+import { useDispatch } from "react-redux";
+import { setLoading } from "../../redux/loadingSlice";
 
 const SignupForm = () => {
   const [showRestOfForm, setShowRestOfForm] = useState(false);
   const [error, setError] = useState("");
-
+  const dispatch = useDispatch();
   const navigate = useNavigate();
   const handleEmailChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     if (!emailValidate(e.target.value) && !showRestOfForm) {
@@ -44,20 +46,22 @@ const SignupForm = () => {
     signupData.age = Number(signupData.age);
 
     try {
+      dispatch(setLoading(true));
       const userCredential = await createUserWithEmailAndPassword(
         auth,
         signupData.email,
         signupData.password
       );
 
-      await setDoc(doc(db, "users", userCredential.user.uid), {
-        name: `${signupData.firstName} ${signupData.lastName}`,
-        age: signupData.age,
-        email: signupData.email,
-      });
-
-      navigate("/");
+      // await setDoc(doc(db, "users", userCredential.user.uid), {
+      //   name: `${signupData.firstName} ${signupData.lastName}`,
+      //   age: signupData.age,
+      //   email: signupData.email,
+      // });
+      dispatch(setLoading(false));
+      navigate("/home");
     } catch (error) {
+      dispatch(setLoading(false));
       setError((error as Error).message);
     }
   };
