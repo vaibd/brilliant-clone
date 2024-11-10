@@ -19,7 +19,7 @@ const LoadingSpinner: React.FC<LoadingSpinnerProps> = ({
     <div className="fixed inset-0 flex items-center justify-center">
       <div className={`inline-block ${className}`}>
         <div
-          className={`${sizeClasses[size]} border-4 border-gray-200 border-t-blue-600 
+          className={`${sizeClasses[size]} border-[6px] border-gray-200 border-t-greenBtn 
           rounded-full animate-spin`}
         ></div>
       </div>

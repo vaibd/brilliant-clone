@@ -1,15 +1,16 @@
 import { configureStore } from "@reduxjs/toolkit";
-import homeReducer from "./home";
-import coursesReducer from "./courses";
-
+import homeSlice from "./homeSlice";
+import coursesSlice from "./coursesSlice";
+import loadingSlice from "./loadingSlice";
 const store = configureStore({
   reducer: {
-    home: homeReducer,
-    courses: coursesReducer,
+    home: homeSlice,
+    courses: coursesSlice,
+    loading: loadingSlice,
   },
-})
+});
 
-export type RootState = ReturnType<typeof store.getState>
-export type AppDispatch = typeof store.dispatch
+export type RootState = ReturnType<typeof store.getState>;
+export type AppDispatch = typeof store.dispatch;
 
-export default store
+export default store;

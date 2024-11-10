@@ -1,16 +1,19 @@
 import "./App.css";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import routes from "./router/RouterProvider";
-import store from "./redux/store";
-import { Provider } from "react-redux";
+import { useSelector } from "react-redux";
+import { useLoading } from "./redux/loadingSlice";
+import LoadingSpinner from "./components/Shared/LoadingSpinner";
 
 const router = createBrowserRouter(routes);
 
 function App() {
+  const isLoading = useSelector(useLoading);
   return (
-    <Provider store={store}>
+    <>
+      {isLoading ? <LoadingSpinner /> : ""}
       <RouterProvider router={router} />
-    </Provider>
+    </>
   );
 }
 

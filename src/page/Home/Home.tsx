@@ -3,7 +3,7 @@ import CourseCard from "../../components/Home/CourseCard";
 import JumpBack from "../../components/Home/JumpBack";
 import StreakCard from "../../components/Home/StreakCard";
 import XPCard from "../../components/Home/XPCard";
-import { useRecommendedCourses } from "../../redux/home";
+import { useRecommendedCourses } from "../../redux/homeSlice";
 
 const days = ["T", "W", "Th", "F", "S"];
 

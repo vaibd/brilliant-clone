@@ -72,4 +72,8 @@
   .btn-grey {
     @apply border-2 border-dim hover:border-black
   }
+
+  .clickable-card {
+    @apply border-2 border-dim hover:border-dimHover relative before:absolute before:inset-0 before:border-b-[6px] before:border-dim before:rounded-[14px] before:-z-10 active:transform active:translate-y-[6px] active:before:border-b-0 active:border-dimHover
+  }
 }

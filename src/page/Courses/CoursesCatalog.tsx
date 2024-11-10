@@ -2,7 +2,7 @@ import FilterTags from "../../components/Courses/FilterTags";
 import Search from "../../components/Shared/Navigation/Search";
 import CourseCard from "../../components/Courses/CourseCard";
 import { useSelector } from "react-redux";
-import { useCourses } from "../../redux/courses";
+import { useCourses } from "../../redux/coursesSlice";
 
 const CoursesCatalog = () => {
   const courses = useSelector(useCourses);

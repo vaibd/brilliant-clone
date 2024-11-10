@@ -9,8 +9,8 @@ const Card = ({
 }) => {
   return (
     <div
-      className={`rounded-2xl p-6 shadow-sm border-2 border-dim ${
-        clickable ? "border-dim clickable-3d-grey" : ""
+      className={`rounded-2xl p-6 shadow-sm relative ${
+        clickable ? "clickable-card" : "border-2 border-dim"
       } ${className}`}>
       {children}
     </div>
