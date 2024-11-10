@@ -33,6 +33,9 @@ export default {
           "60%": { left: "100%" },
           "100%": { left: "100%" },
         },
+        shimmer: {
+          '100%': { transform: 'translateX(100%)' }
+        }
       },
       animation: {
         slideDown: "slideDown 0.3s ease-in-out",
