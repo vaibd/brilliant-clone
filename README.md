@@ -21,3 +21,7 @@ cd brilliant-clone
 ```bash
 npm install
 ```
+3. Run the Development Server
+```bash
+npm run dev
+```
