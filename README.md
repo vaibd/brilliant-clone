@@ -24,7 +24,7 @@ npm install
 ```bash
 npm run dev
 ```
-4. Reanme .env.placeholder to .env and set the keys, or copy paste this into .env
+4. Rename .env.placeholder to .env and set the keys, or copy paste this into .env
 ```bash
 VITE_FIREBASE_API_KEY=
 VITE_FIREBASE_AUTH_DOMAIN=
