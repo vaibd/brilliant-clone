@@ -11,7 +11,7 @@ const Paths = () => {
           className={({ isActive }) =>
             `relative flex items-center gap-2 ${
               isActive
-                ? "after:absolute after:top-8 smLaptop:after:top-10 after:left-0 after:h-0.5 after:w-full after:bg-current"
+                ? "after:absolute after:top-8 smLaptop:after:top-9 after:left-0 after:h-0.5 after:w-full after:bg-current"
                 : ""
             }`
           }>

@@ -1,10 +1,11 @@
 import Login from "../page/Authentication/Login";
 import Signup from "../page/Authentication/Signup";
-import CourseCatalog from "../page/Course/CourseCatalog";
+import CoursesCatalog from "../page/Courses/CoursesCatalog";
 import Home from "../page/Home/Home";
 import Landing from "../page/Landing/Landing";
 import NotFound from "../page/NotFound/NotFound";
 import AuthRoutes from "./AuthRoutes";
+import NonAuthRoutes from "./NonAuthRoutes";
 
 const privateRoutes = [
   {
@@ -12,19 +13,27 @@ const privateRoutes = [
     element: <Home />,
   },
   {
-    path: "/course-catalog",
-    element: <CourseCatalog />,
+    path: "/courses",
+    element: <CoursesCatalog />,
   },
 ];
 
 const publicRoutes = [
   {
     path: "/login",
-    element: <Login />,
+    element: (
+      <NonAuthRoutes>
+        <Login />
+      </NonAuthRoutes>
+    ),
   },
   {
     path: "/signup",
-    element: <Signup />,
+    element: (
+      <NonAuthRoutes>
+        <Signup />
+      </NonAuthRoutes>
+    ),
   },
   {
     path: "/",

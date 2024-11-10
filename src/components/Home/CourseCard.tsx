@@ -4,14 +4,15 @@ interface CourseCardProps {
   title: string;
   icon: string;
   subtitle?: string;
-  color?: string;
 }
 
-const CourseCard = ({ title, icon, subtitle, color }: CourseCardProps) => {
+const CourseCard = ({ title, icon, subtitle }: CourseCardProps) => {
   return (
-    <Card clickable>
-      <div className="text-4xl mb-2">{icon}</div>
-      <h3 className="font-bold">{title}</h3>
+    <Card
+      clickable
+      className="space-y-2 text-center flex flex-col items-center justify-center cursor-pointer">
+      <img src={icon} alt={title} className="w-10 h-10" />
+      <h4 className="text-sm font-bold">{title}</h4>
       {subtitle && <p className="text-xs text-gray-600 mt-1">{subtitle}</p>}
     </Card>
   );

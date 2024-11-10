@@ -1,5 +1,5 @@
 import { initializeApp } from "firebase/app";
-import { getAuth } from "firebase/auth";
+import { getAuth, GoogleAuthProvider, setPersistence, browserLocalPersistence, EmailAuthProvider } from "firebase/auth";
 import { getFirestore } from "firebase/firestore";
 
 const {
@@ -22,7 +22,13 @@ const firebaseConfig = {
 
 const app = initializeApp(firebaseConfig);
 const auth = getAuth(app);
+setPersistence(auth, browserLocalPersistence)
+  .catch((error) => {
+    console.error("Auth persistence error:", error);
+  });
+
+const googleProvider = new GoogleAuthProvider();
+const emailProvider = new EmailAuthProvider();
 const db = getFirestore(app);
 
-//export the getAuth function
-export { auth, db };
+export { auth, db, googleProvider, emailProvider };

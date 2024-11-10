@@ -30,7 +30,8 @@
   }
 
   h3,
-  p {
+  p,
+  button {
     @apply text-base;
   }
 }
@@ -48,6 +49,10 @@
     @apply text-xl font-[CoFoSansMedium];
   }
 
+  .width-xl {
+    @apply max-w-[95dvw] mx-auto mobile:max-w-[90dvw] tablet:max-w-[85dvw] laptop:max-w-[80dvw] desktop:max-w-[80dvw];
+  }
+
   .width-lg {
     @apply max-w-[90dvw] mx-auto mobile:max-w-[85dvw] tablet:max-w-[80dvw] laptop:max-w-[70dvw] desktop:max-w-[48dvw];
   }
@@ -62,5 +67,9 @@
 
   .clickable-3d-grey {
     @apply clickable-3d active:border-b-2 border-2 border-b-[6px] border-dim hover:border-dimHover
+  }
+
+  .btn-grey {
+    @apply border-2 border-dim hover:border-black
   }
 }
