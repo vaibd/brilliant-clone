@@ -7,16 +7,21 @@ import Streak from "./Streak";
 import { signOut } from "firebase/auth";
 import { useNavigate } from "react-router-dom";
 import { auth } from "../../../firebase/config";
-
+import { useDispatch } from "react-redux";
+import { setLoading } from "../../../redux/loadingSlice";
 const NavBar = ({ children }: { children: React.ReactNode }) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const navigate = useNavigate();
+  const dispatch = useDispatch();
 
   const logout = async () => {
     try {
+      dispatch(setLoading(true));
       await signOut(auth);
+      dispatch(setLoading(false));
       navigate("/");
     } catch (error) {
+      dispatch(setLoading(false));
       console.log(error);
     }
   };
