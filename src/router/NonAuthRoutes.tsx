@@ -1,9 +1,9 @@
 import { Navigate } from "react-router-dom";
-import { useLoginUser } from "../customHooks/useLoginUser";
 import LoadingSpinner from "../components/Shared/LoadingSpinner";
+import { useAuthState } from "../customHooks/useAuthState";
 
 const NonAuthRoutes = ({ children }: { children: React.ReactNode }) => {
-  const { user, loading } = useLoginUser();
+  const { user, loading } = useAuthState();
 
   if (loading) return <LoadingSpinner />;
   return user ? <Navigate replace to="/home" /> : <>{children}</>;

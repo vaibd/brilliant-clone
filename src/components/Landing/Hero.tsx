@@ -1,5 +1,5 @@
 import { GetStarted } from "../Shared/Buttons/GetStarted";
-
+import { Link } from "react-router-dom";
 
 const Hero = () => {
   return (
@@ -12,7 +12,9 @@ const Hero = () => {
           Guided interactive problem solving that's effective and fun. Master
           concepts in 15 minutes a day.
         </p>
-        <GetStarted className="w-40 sm:w-72" />
+        <Link to="/home">
+          <GetStarted className="w-40 sm:w-72" />
+        </Link>
       </div>
       <div className="relative rounded-3xl border-t-2 border-l-2 border-b-8 border-r-8 border-black">
         <img
