@@ -6,12 +6,14 @@ export default {
       screens: {
         mobile: "320px",
         tablet: "640px",
+        smLaptop: "769px",
         laptop: "1460px",
         desktop: "1920px",
       },
       colors: {
-        dim: "#e5e7eb",
-        dimText: "#4b5563",
+        dim: "#E5E5E5",
+        dimHover: "#BEBEBE",
+        dimText: "#666666",
         white: "#fdfdfd",
         offWhite: "#F6F6F6",
         greenBtn: "#22c55e",

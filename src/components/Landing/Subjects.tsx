@@ -1,4 +1,5 @@
-import { subjects } from "../../../helpers/subjects";
+import { subjects } from "../../constants/subjects";
+
 
 const Subjects = () => {
   return (

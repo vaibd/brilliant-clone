@@ -1,0 +1,18 @@
+<svg 
+  xmlns="http://www.w3.org/2000/svg"
+  width="16"
+  height="16"
+  viewBox="0 0 16 16" 
+  focusable="false"
+  aria-hidden="true"
+>
+  <path d="M3.51992 1.28H13.7599V12.8H15.0399V0H3.51992V1.28Z" fill="currentcolor" />
+  <path d="M3.51992 12.16H7.99992V10.88H3.51992V12.16Z" fill="currentcolor" />
+  <path d="M3.51992 5.12H9.91992V8.96H3.51992V5.12Z" fill="currentcolor" />
+  <path 
+    fill-rule="evenodd" 
+    clip-rule="evenodd" 
+    d="M0.960079 16V2.56H12.4801V16H0.960079ZM2.24008 3.84H11.2001V14.72H2.24008V3.84Z" 
+    fill="currentcolor"
+  />
+</svg>

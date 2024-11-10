@@ -1,15 +1,15 @@
 import Login from "../page/Authentication/Login";
 import Signup from "../page/Authentication/Signup";
 import CourseCatalog from "../page/Course/CourseCatalog";
-import Dashboard from "../page/Dashboard/Dashboard";
+import Home from "../page/Home/Home";
 import Landing from "../page/Landing/Landing";
 import NotFound from "../page/NotFound/NotFound";
 import AuthRoutes from "./AuthRoutes";
 
 const privateRoutes = [
   {
-    path: "/dashboard",
-    element: <Dashboard />,
+    path: "/home",
+    element: <Home />,
   },
   {
     path: "/course-catalog",

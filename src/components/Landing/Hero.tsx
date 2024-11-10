@@ -1,4 +1,5 @@
-import { GetStarted } from "../Buttons/GetStarted";
+import { GetStarted } from "../Shared/Buttons/GetStarted";
+
 
 const Hero = () => {
   return (
@@ -11,7 +12,7 @@ const Hero = () => {
           Guided interactive problem solving that's effective and fun. Master
           concepts in 15 minutes a day.
         </p>
-        <GetStarted />
+        <GetStarted className="w-40 sm:w-72" />
       </div>
       <div className="relative rounded-3xl border-t-2 border-l-2 border-b-8 border-r-8 border-black">
         <img

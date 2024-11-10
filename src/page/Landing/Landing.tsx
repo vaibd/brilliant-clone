@@ -1,8 +1,9 @@
-import { Dummy } from "../../components/Shared/Landing/Dummy";
-import Hero from "../../components/Shared/Landing/Hero";
-import Navbar from "../../components/Shared/Landing/Navbar";
-import Stats from "../../components/Shared/Landing/Stats";
-import Subjects from "../../components/Shared/Landing/Subjects";
+import { Dummy } from "../../components/Landing/Dummy";
+import Hero from "../../components/Landing/Hero";
+import Navbar from "../../components/Landing/Navbar";
+import Stats from "../../components/Landing/Stats";
+import Subjects from "../../components/Landing/Subjects";
+
 
 const Landing = () => {
   return (
