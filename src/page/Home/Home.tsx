@@ -1,11 +1,14 @@
+import { useSelector } from "react-redux";
 import CourseCard from "../../components/Home/CourseCard";
 import JumpBack from "../../components/Home/JumpBack";
 import StreakCard from "../../components/Home/StreakCard";
 import XPCard from "../../components/Home/XPCard";
-import { courseRecommendedData } from "../../constants/home";
+import { useRecommendedCourses } from "../../redux/home";
+
+const days = ["T", "W", "Th", "F", "S"];
 
 const Home = () => {
-  const days = ["T", "W", "Th", "F", "S"];
+  const recommendedCourses = useSelector(useRecommendedCourses);
 
   return (
     <div className="my-10 width-lg mx-auto p-6">
@@ -30,12 +33,12 @@ const Home = () => {
           {/* Recommended Section */}
           <div>
             <h2 className="max-smLaptop:mt-10 text-xl font-bold mb-4">Recommended for you</h2>
-            <div className="grid grid-cols-3 gap-4">
-              {courseRecommendedData.map((item) => (
+            <div className="grid grid-cols-1 md:grid-cols-2 smLaptop:grid-cols-3 gap-4">
+              {recommendedCourses.map((item) => (
                 <CourseCard
                   key={item.title}
                   title={item.title}
-                  icon={`/src/assets/images/${item.icon}`}
+                  icon={`/src/assets/images/${item.image}`}
                 />
               ))}
             </div>
