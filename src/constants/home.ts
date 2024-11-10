@@ -110,7 +110,7 @@ export const courses: CourseT[] = [
   {
     id: "13",
     title: "Computer Vision",
-    category: "Computer Science",
+    category: "Science",
     isNew: true,
     image: "cv.png",
     progress: 0,
