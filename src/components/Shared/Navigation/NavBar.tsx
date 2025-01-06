@@ -42,7 +42,7 @@ const NavBar = ({ children }: { children: React.ReactNode }) => {
               className="p-2 hover:bg-gray-100 rounded-full transition-colors"
               aria-label="Toggle menu">
               <img
-                src="src/assets/icons/burger-menu.svg"
+                src="assets/icons/burger-menu.svg"
                 alt="burger-menu"
                 className="size-full"
               />

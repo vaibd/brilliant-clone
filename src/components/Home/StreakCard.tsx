@@ -19,14 +19,14 @@ const StreakCard = ({
         <div className="flex items-center gap-2">
           <span className="text-4xl font-bold">{streakCount}</span>
           <img
-            src="/src/assets/icons/lightning-outline.svg"
+            src="assets/icons/lightning-outline.svg"
             alt="star"
             className="size-8"
           />
         </div>
         <button className="text-dimText rounded-full bg-dim p-1">
           <img
-            src="/src/assets/icons/down-arr.svg"
+            src="assets/icons/down-arr.svg"
             alt="down"
             className="size-6 flex justify-center items-center"
           />
@@ -48,8 +48,8 @@ const StreakCard = ({
               <img
                 src={
                   index === 0
-                    ? "/src/assets/icons/lightning.svg"
-                    : "/src/assets/icons/lightning-outline.svg"
+                    ? "assets/icons/lightning.svg"
+                    : "assets/icons/lightning-outline.svg"
                 }
                 alt="calendar"
                 className="size-6"
@@ -64,7 +64,7 @@ const StreakCard = ({
           {[1, 2].map((_, i) => (
             <img
               key={i}
-              src="/src/assets/icons/battery.svg"
+              src="assets/icons/battery.svg"
               alt="battery"
               className="size-6"
             />

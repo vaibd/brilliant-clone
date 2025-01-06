@@ -16,6 +16,7 @@ const Password = ({
       <Input
         type={showPassword ? "text" : "password"}
         name="password"
+        defaultValue={"test@test.com"}
         placeholder="Password"
         className={`w-full pr-10 ${className}`}
         {...props}
@@ -25,7 +26,7 @@ const Password = ({
         className="absolute right-3 top-1/2 -translate-y-1/2"
         onClick={() => setShowPassword(!showPassword)}>
         <img
-          src={`src/assets/icons/${
+          src={`assets/icons/${
             showPassword ? "eye-close" : "eye-open"
           }.svg`}
           alt={showPassword ? "hide password" : "show password"}

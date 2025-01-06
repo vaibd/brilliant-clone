@@ -10,7 +10,7 @@ const XPCard = ({ currentXP, targetXP }: XPCardProps) => {
     <Card>
       <div className="flex items-center gap-4">
         <img
-          src="/src/assets/images/leagues-locked.svg"
+          src="assets/images/leagues-locked.svg"
           alt="star"
           className="size-14"
         />

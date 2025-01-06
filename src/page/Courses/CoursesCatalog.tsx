@@ -43,7 +43,7 @@ const CoursesCatalog = () => {
               <CourseCard
                 key={course.title}
                 title={course.title}
-                imageUrl={`/src/assets/images/${course.image}`}
+                imageUrl={`assets/images/${course.image}`}
                 isNew={course.isNew}
               />
             ))}

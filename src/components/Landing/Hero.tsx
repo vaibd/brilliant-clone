@@ -18,7 +18,7 @@ const Hero = () => {
       </div>
       <div className="relative rounded-3xl border-t-2 border-l-2 border-b-8 border-r-8 border-black">
         <img
-          src="src/assets/images/hero.png"
+          src="assets/images/hero.png"
           alt="Interactive learning interface"
           className="rounded-3xl "
         />

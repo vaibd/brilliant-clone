@@ -16,7 +16,7 @@ const Paths = () => {
             }`
           }>
           <img
-            src={`src/assets/icons/${route.icon}`}
+            src={`assets/icons/${route.icon}`}
             alt={route.name}
             className="size-4 hidden sm:block"
           />

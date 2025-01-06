@@ -24,7 +24,7 @@ const Home = () => {
         <div className="space-y-6 smLaptop:w-[60%]">
           <h2 className="max-smLaptop:mt-10 text-xl font-bold">Jump back in</h2>
           <JumpBack
-            imageUrl="/src/assets/images/science-banner.png"
+            imageUrl="assets/images/science-banner.png"
             category="SCIENCE"
             level={1}
             title="Scientific Thinking"
@@ -38,7 +38,7 @@ const Home = () => {
                 <CourseCard
                   key={item.title}
                   title={item.title}
-                  icon={`/src/assets/images/${item.image}`}
+                  icon={`assets/images/${item.image}`}
                 />
               ))}
             </div>

@@ -30,7 +30,7 @@ const SocialLogins = () => {
           onClick={googleLogin}
           className="flex items-center justify-center clickable-3d-grey">
           <img
-            src="src/assets/icons/google.svg"
+            src="assets/icons/google.svg"
             alt="Google"
             className="size-6"
           />
@@ -38,7 +38,7 @@ const SocialLogins = () => {
 
         <Button3D className="flex items-center justify-center clickable-3d-grey">
           <img
-            src="src/assets/icons/facebook.svg"
+            src="assets/icons/facebook.svg"
             alt="Facebook"
             className="size-6"
           />

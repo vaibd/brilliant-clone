@@ -53,6 +53,7 @@ const LoginForm = () => {
       <Input
         type="email"
         name="email"
+        defaultValue={"test@test.com"}
         helperText={emailHelper}
         placeholder="Email"
       />

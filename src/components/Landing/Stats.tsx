@@ -13,14 +13,14 @@ const Stats = () => {
           <div className="grid grid-cols-2 gap-4 max-laptop:grid-cols-1 flex-1 justify-center">
             <div className="flex items-center justify-center">
               <img
-                src="src/assets/images/new-york-times.png"
+                src="assets/images/new-york-times.png"
                 alt="New York Times"
                 className="h-7 grayscale opacity-50"
               />
             </div>
             <div className="flex items-center justify-center">
               <img
-                src="src/assets/images/atlantic.png"
+                src="assets/images/atlantic.png"
                 alt="The Atlantic"
                 className="h-8 grayscale opacity-50"
               />
@@ -34,7 +34,7 @@ const Stats = () => {
               {[...Array(5)].map((_, i) => (
                 <img
                   key={i}
-                  src="src/assets/icons/Star.svg"
+                  src="assets/icons/Star.svg"
                   alt="Star"
                   className="w-5 h-5"
                 />
@@ -47,7 +47,7 @@ const Stats = () => {
 
           <div className="flex-1 flex items-center justify-center">
             <img
-              src="src/assets/images/Trustpilot.svg"
+              src="assets/images/Trustpilot.svg"
               alt="Trustpilot"
               className="size-28"
             />
@@ -58,14 +58,14 @@ const Stats = () => {
           <div className="grid grid-cols-2 gap-4 max-laptop:grid-cols-1 flex-1 justify-center">
             <div className="flex items-center justify-center">
               <img
-                src="src/assets/images/app-of-the-day.png"
+                src="assets/images/app-of-the-day.png"
                 alt="Apple App of the Day"
                 className="h-12"
               />
             </div>
             <div className="flex items-center justify-center">
               <img
-                src="src/assets/images/Gplay-best-app.png"
+                src="assets/images/Gplay-best-app.png"
                 alt="Google Play Best App"
                 className="h-12"
               />

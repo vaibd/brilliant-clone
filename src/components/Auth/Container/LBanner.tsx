@@ -2,7 +2,7 @@ export const LBanner = () => {
   return (
     <div className="max-smLaptop:hidden w-1/2 flex items-center justify-center">
       <img
-        src="/src/assets/images/rocket.svg"
+        src="assets/images/rocket.svg"
         alt="3D Illustration"
         className="w-[90%]"
       />

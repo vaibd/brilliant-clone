@@ -3,7 +3,7 @@ const Streak = () => {
     <p className="flex items-center gap-1 font-semibold text-base">
       1
       <img
-        src="src/assets/icons/lightning-outline.svg"
+        src="assets/icons/lightning-outline.svg"
         alt="lightning"
         className="ml-1"
       />

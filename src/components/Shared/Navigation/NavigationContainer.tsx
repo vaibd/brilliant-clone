@@ -1,6 +1,6 @@
 import React, { useRef, useEffect, useState } from "react";
-import BrillantLogo from "../../../assets/icons/BrillantLogo";
 import { useScrollVisibility } from "../../../customHooks/useScrollVisibility";
+import BrillantLogo from "../BrillantLogo";
 
 const NavigationContainer = ({
   children,
