@@ -10,7 +10,7 @@ const Navbar = () => {
     <NavigationContainer className="md:py-8 py-4">
       <div className="flex items-center gap-4">
         <a href="/login">
-          <ButtonRound className="w-full btn-grey max-tablet:hidden">
+          <ButtonRound className="w-28 btn-grey max-tablet:hidden">
             Log in
           </ButtonRound>
         </a>
