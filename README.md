@@ -24,15 +24,8 @@ npm install
 ```bash
 npm run dev
 ```
-4. Reanme .env.placeholder to .env and set the keys, or copy paste this into .env
-```bash
-VITE_FIREBASE_API_KEY=
-VITE_FIREBASE_AUTH_DOMAIN=
-VITE_FIREBASE_PROJECT_ID=
-VITE_FIREBASE_STORAGE_BUCKET=
-VITE_FIREBASE_MESSAGING_SENDER_ID=
-VITE_FIREBASE_APP_ID=
-```
+4. Rename .env.placeholder to .env and set the keys
+
 ## Features
 1. Custom tailwind styles (in tailwind.config.ts)
 2. Buttons and cards have animations
@@ -50,3 +43,6 @@ VITE_FIREBASE_APP_ID=
 ## Limitation
 1. Reducer is returning static data; could have been improved by using extra reducer
 2. Featuers filter could be improved by dispatching actions instead of directly manipulating data
+
+## Time taken
+~8hrs, took some time in UI and animations.
