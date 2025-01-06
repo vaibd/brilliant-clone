@@ -7,21 +7,21 @@
   font-family: 'CoFoRobertRegular';
   font-style: normal;
   font-weight: normal;
-  src: local('CoFoRobertRegular'), url('assets/fonts/CoFo_Robert/CoFo_Robert-Regular.woff') format('woff');
+  src: local('CoFoRobertRegular'), url('/assets/fonts/CoFo_Robert/CoFo_Robert-Regular.woff') format('woff');
 }
 
 @font-face {
   font-family: 'CoFoSansRegular';
   font-style: normal;
   font-weight: normal;
-  src: local('CoFoSansRegular'), url('assets/fonts/CoFo_Sans/CoFoSans-Regular.woff') format('woff');
+  src: local('CoFoSansRegular'), url('/assets/fonts/CoFo_Sans/CoFoSans-Regular.woff') format('woff');
 }
 
 @font-face {
   font-family: 'CoFoSansMedium';
   font-style: normal;
   font-weight: normal;
-  src: local('CoFoSansMedium'), url('assets/fonts/CoFo_Sans/CoFoSans-Medium.woff') format('woff');
+  src: local('CoFoSansMedium'), url('/assets/fonts/CoFo_Sans/CoFoSans-Medium.woff') format('woff');
 }
 
 @layer base {
