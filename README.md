@@ -24,15 +24,8 @@ npm install
 ```bash
 npm run dev
 ```
-4. Rename .env.placeholder to .env and set the keys, or copy paste this into .env
-```bash
-VITE_FIREBASE_API_KEY=AIzaSyDUA2axTTTPf6YXEO0rEWBhpNOenGT0chk
-VITE_FIREBASE_AUTH_DOMAIN=brilliant-clone-c2aa0.firebaseapp.com
-VITE_FIREBASE_PROJECT_ID=brilliant-clone-c2aa0
-VITE_FIREBASE_STORAGE_BUCKET=brilliant-clone-c2aa0.firebasestorage.app
-VITE_FIREBASE_MESSAGING_SENDER_ID=956969210351
-VITE_FIREBASE_APP_ID=1:956969210351:web:bc5d136bc178494c57e61a
-```
+4. Rename .env.placeholder to .env and set the keys
+
 ## Features
 1. Custom tailwind styles (in tailwind.config.ts)
 2. Buttons and cards have animations
