@@ -6,8 +6,6 @@ import { SignupFormValues } from "../../types/auth";
 import { auth } from "../../firebase/config";
 import { createUserWithEmailAndPassword } from "firebase/auth";
 import { useNavigate } from "react-router-dom";
-import { doc, setDoc } from "firebase/firestore";
-import { db } from "../../firebase/config";
 import {
   emailValidate,
   emptyFieldValidate,
@@ -47,7 +45,7 @@ const SignupForm = () => {
 
     try {
       dispatch(setLoading(true));
-      const userCredential = await createUserWithEmailAndPassword(
+      await createUserWithEmailAndPassword(
         auth,
         signupData.email,
         signupData.password
